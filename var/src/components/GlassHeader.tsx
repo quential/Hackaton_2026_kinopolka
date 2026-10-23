@@ -11,10 +11,10 @@ type GlassHeaderProps = {
   theme: Theme
 }
 
-const navItems: Array<{ label: string; view: AppView }> = [
-  { label: 'Подборки', view: 'home' },
-  { label: 'Каталог', view: 'catalog' },
-  { label: 'Посмотреть позже', view: 'saved' },
+const navItems: Array<{ label: string; mobileLabel: string; view: AppView }> = [
+  { label: 'Подборки', mobileLabel: 'Подборки', view: 'home' },
+  { label: 'Каталог', mobileLabel: 'Каталог', view: 'catalog' },
+  { label: 'Посмотреть позже', mobileLabel: 'Позже', view: 'saved' },
 ]
 
 export function GlassHeader({
@@ -45,7 +45,8 @@ export function GlassHeader({
             onClick={() => onNavigate(item.view)}
             type="button"
           >
-            {item.label}
+            <span className="nav-link__label nav-link__label--full">{item.label}</span>
+            <span className="nav-link__label nav-link__label--mobile">{item.mobileLabel}</span>
           </button>
         ))}
       </nav>
