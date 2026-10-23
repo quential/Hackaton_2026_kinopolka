@@ -10,11 +10,13 @@ import { SavedPage } from './components/SavedPage'
 import { Toast } from './components/Toast'
 import { WelcomeScreen } from './components/WelcomeScreen'
 import type { Movie } from './types/movie'
+import type { MovieReview, MovieReviewsById, ReviewDraft } from './types/review'
 import type { Theme } from './types/theme'
 import './App.css'
 
 const THEME_STORAGE_KEY = 'kinopolka-theme'
 const SAVED_STORAGE_KEY = 'kinopolka-saved'
+const REVIEWS_STORAGE_KEY = 'kinopolka-reviews'
 const INTRO_STORAGE_KEY = 'kinopolka-intro-seen'
 
 function getInitialTheme(): Theme {
@@ -32,6 +34,41 @@ function getInitialSavedIds(): Set<string> {
   }
 }
 
+function isMovieReview(value: unknown): value is MovieReview {
+  if (!value || typeof value !== 'object') return false
+
+  const review = value as Record<string, unknown>
+  return (
+    typeof review.id === 'string' &&
+    typeof review.author === 'string' &&
+    typeof review.comment === 'string' &&
+    typeof review.createdAt === 'string' &&
+    typeof review.rating === 'number' &&
+    Number.isInteger(review.rating) &&
+    review.rating >= 1 &&
+    review.rating <= 5
+  )
+}
+
+function getInitialReviewsByMovie(): MovieReviewsById {
+  try {
+    const storedValue: unknown = JSON.parse(window.localStorage.getItem(REVIEWS_STORAGE_KEY) ?? '{}')
+    if (!storedValue || typeof storedValue !== 'object' || Array.isArray(storedValue)) return {}
+
+    const reviewsByMovieId: MovieReviewsById = {}
+    Object.entries(storedValue).forEach(([movieId, reviews]) => {
+      if (!Array.isArray(reviews)) return
+
+      const validReviews = reviews.filter(isMovieReview)
+      if (validReviews.length > 0) reviewsByMovieId[movieId] = validReviews
+    })
+
+    return reviewsByMovieId
+  } catch {
+    return {}
+  }
+}
+
 function App() {
   const [activeView, setActiveView] = useState<AppView>('home')
   const [editorialOffset, setEditorialOffset] = useState(0)
@@ -39,6 +76,7 @@ function App() {
   const [loadError, setLoadError] = useState<string | null>(null)
   const [modalMovie, setModalMovie] = useState<Movie | null>(null)
   const [movies, setMovies] = useState<Movie[]>([])
+  const [reviewsByMovieId, setReviewsByMovieId] = useState<MovieReviewsById>(getInitialReviewsByMovie)
   const [savedIds, setSavedIds] = useState<Set<string>>(getInitialSavedIds)
   const [showWelcome, setShowWelcome] = useState(
     () => window.sessionStorage.getItem(INTRO_STORAGE_KEY) !== 'true',
@@ -71,6 +109,10 @@ function App() {
   useEffect(() => {
     window.localStorage.setItem(SAVED_STORAGE_KEY, JSON.stringify([...savedIds]))
   }, [savedIds])
+
+  useEffect(() => {
+    window.localStorage.setItem(REVIEWS_STORAGE_KEY, JSON.stringify(reviewsByMovieId))
+  }, [reviewsByMovieId])
 
   useEffect(() => {
     if (!toastMessage) return
@@ -119,6 +161,20 @@ function App() {
     setToastMessage(`Запускаем «${movie.title}»`)
   }
 
+  const addReview = (movie: Movie, draft: ReviewDraft) => {
+    const review: MovieReview = {
+      ...draft,
+      id: window.crypto?.randomUUID?.() ?? `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`,
+      createdAt: new Date().toISOString(),
+    }
+
+    setReviewsByMovieId((currentReviews) => ({
+      ...currentReviews,
+      [movie.id]: [...(currentReviews[movie.id] ?? []), review],
+    }))
+    setToastMessage(`Ваш отзыв о «${movie.title}» добавлен`)
+  }
+
   return (
     <div className={`app-shell ${showWelcome ? 'is-welcome' : ''}`}>
       <GlassHeader
@@ -163,13 +219,18 @@ function App() {
         </div>
       )}
 
-      <MovieModal
-        movie={modalMovie}
-        onClose={() => setModalMovie(null)}
-        onToggleSaved={toggleSaved}
-        onWatch={watchMovie}
-        saved={modalMovie ? savedIds.has(modalMovie.id) : false}
-      />
+      {modalMovie && (
+        <MovieModal
+          key={modalMovie.id}
+          movie={modalMovie}
+          onAddReview={addReview}
+          onClose={() => setModalMovie(null)}
+          onToggleSaved={toggleSaved}
+          onWatch={watchMovie}
+          saved={savedIds.has(modalMovie.id)}
+          userReviews={reviewsByMovieId[modalMovie.id] ?? []}
+        />
+      )}
       <Toast message={toastMessage} />
     </div>
   )

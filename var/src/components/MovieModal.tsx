@@ -1,22 +1,33 @@
-import { useEffect } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import { getDefaultReviews } from '../data/reviews'
 import type { Movie } from '../types/movie'
+import type { MovieReview, ReviewDraft } from '../types/review'
 import Icon from './Icon'
+import { MovieReviewsPanel } from './MovieReviewsPanel'
 
 type MovieModalProps = {
-  movie: Movie | null
+  movie: Movie
+  onAddReview: (movie: Movie, review: ReviewDraft) => void
   onClose: () => void
   onToggleSaved: (movie: Movie) => void
   onWatch: (movie: Movie) => void
   saved: boolean
+  userReviews: MovieReview[]
 }
 
 export function MovieModal({
   movie,
+  onAddReview,
   onClose,
   onToggleSaved,
   onWatch,
   saved,
+  userReviews,
 }: MovieModalProps) {
+  const [reviewsMovieId, setReviewsMovieId] = useState<string | null>(null)
+  const isReviewsOpen = reviewsMovieId === movie.id
+  const reviews = useMemo(() => [...getDefaultReviews(movie), ...userReviews], [movie, userReviews])
+
   useEffect(() => {
     if (!movie) return
 
@@ -33,8 +44,6 @@ export function MovieModal({
     }
   }, [movie, onClose])
 
-  if (!movie) return null
-
   return (
     <div
       aria-label="Подробности фильма"
@@ -44,7 +53,7 @@ export function MovieModal({
       }}
       role="presentation"
     >
-      <div aria-modal="true" className="movie-modal" role="dialog">
+      <div aria-modal="true" className={`movie-modal ${isReviewsOpen ? 'is-reviews-open' : ''}`} role="dialog">
         <button aria-label="Закрыть" className="modal-close" onClick={onClose} type="button">
           <Icon name="close" size={20} />
         </button>
@@ -90,6 +99,23 @@ export function MovieModal({
               <Icon name={saved ? 'check' : 'bookmark'} size={17} />
               {saved ? 'В списке' : 'Посмотреть позже'}
             </button>
+            <button
+              aria-controls="movie-modal-reviews"
+              aria-expanded={isReviewsOpen}
+              className={`button button--secondary movie-modal__reviews-toggle ${isReviewsOpen ? 'is-active' : ''}`}
+              onClick={() => setReviewsMovieId((openMovieId) => (openMovieId === movie.id ? null : movie.id))}
+              type="button"
+            >
+              <Icon name="star" size={16} />
+              Оценки
+              <span className="movie-modal__reviews-count">{reviews.length}</span>
+              <Icon name="chevron-down" size={15} />
+            </button>
+          </div>
+        </div>
+        <div className="movie-modal__reviews-reveal" id="movie-modal-reviews">
+          <div className="movie-modal__reviews-inner">
+            <MovieReviewsPanel onSubmit={(review) => onAddReview(movie, review)} reviews={reviews} />
           </div>
         </div>
       </div>
