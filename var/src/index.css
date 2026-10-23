@@ -15,7 +15,7 @@
   --accent-strong: #79c5ff;
   --gold: #f4c64d;
   --shadow: 0 24px 80px rgba(0, 0, 0, 0.34);
-  --sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+  --sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
   color-scheme: dark;
   font-family: var(--sans);
   font-synthesis: none;
