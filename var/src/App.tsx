@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import { fetchMovies } from './api/movies'
 import { CatalogPage } from './components/CatalogPage'
 import { ErrorState } from './components/ErrorState'
+import { GenrePage } from './components/GenrePage'
 import GlassHeader, { type AppView } from './components/GlassHeader'
 import { HomePage } from './components/HomePage'
 import { LoadingState } from './components/LoadingState'
@@ -10,7 +11,7 @@ import { MoodQuizPage } from './components/MoodQuizPage'
 import { SavedPage } from './components/SavedPage'
 import { Toast } from './components/Toast'
 import { WelcomeScreen } from './components/WelcomeScreen'
-import type { Movie } from './types/movie'
+import type { Genre, Movie } from './types/movie'
 import type { MovieReview, MovieReviewsById, ReviewDraft } from './types/review'
 import type { Theme } from './types/theme'
 import './App.css'
@@ -95,6 +96,7 @@ function getInitialReviewsByMovie(): MovieReviewsById {
 
 function App() {
   const [activeView, setActiveView] = useState<AppView>('home')
+  const [activeGenre, setActiveGenre] = useState<Genre>('драма')
   const [editorialSelection, setEditorialSelection] = useState<EditorialSelection>({ index: 0, movies: [] })
   const [isLoading, setIsLoading] = useState(true)
   const [loadError, setLoadError] = useState<string | null>(null)
@@ -190,6 +192,11 @@ function App() {
     })
   }
 
+  const openGenre = (genre: Genre) => {
+    setActiveGenre(genre)
+    navigate('genre')
+  }
+
   const watchMovie = (movie: Movie) => {
     const openedWindow = window.open(movie.watchUrl, '_blank', 'noopener,noreferrer')
 
@@ -246,6 +253,7 @@ function App() {
                 })
               }
               onStartMoodQuiz={() => navigate('mood')}
+              onOpenGenre={openGenre}
               onSelect={setModalMovie}
               onToggleSaved={toggleSaved}
               popularMovies={popularMovies}
@@ -262,6 +270,16 @@ function App() {
           )}
           {!isLoading && !loadError && activeView === 'mood' && (
             <MoodQuizPage
+              movies={movies}
+              onBack={() => navigate('home')}
+              onSelect={setModalMovie}
+              onToggleSaved={toggleSaved}
+              savedIds={savedIds}
+            />
+          )}
+          {!isLoading && !loadError && activeView === 'genre' && (
+            <GenrePage
+              genre={activeGenre}
               movies={movies}
               onBack={() => navigate('home')}
               onSelect={setModalMovie}

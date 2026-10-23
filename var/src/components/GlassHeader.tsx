@@ -2,7 +2,7 @@ import type { Theme } from '../types/theme'
 import Icon from './Icon'
 import { BrandMark } from './BrandMark'
 
-export type AppView = 'home' | 'catalog' | 'saved' | 'mood'
+export type AppView = 'home' | 'catalog' | 'saved' | 'mood' | 'genre'
 
 type GlassHeaderProps = {
   activeView: AppView
@@ -23,7 +23,7 @@ export function GlassHeader({
   onToggleTheme,
   theme,
 }: GlassHeaderProps) {
-  const activeNavView = activeView === 'mood' ? 'home' : activeView
+  const activeNavView = activeView === 'mood' || activeView === 'genre' ? 'home' : activeView
 
   return (
     <header className="glass-header">

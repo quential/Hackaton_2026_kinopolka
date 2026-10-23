@@ -51,7 +51,6 @@ export function GenrePage({
 
       <div className="page-heading">
         <div>
-          <p className="eyebrow">Если хочется чего-то другого</p>
           <h1>{title}</h1>
           <p>{description}</p>
         </div>

@@ -955,6 +955,49 @@
   margin-top: 44px;
 }
 
+.genre-page {
+  margin-top: 20px;
+}
+
+.genre-page__back {
+  padding: 6px 0;
+  border: 0;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 14px;
+  transition: color 180ms ease;
+}
+
+.genre-page__back::before {
+  margin-right: 8px;
+  content: '←';
+}
+
+.genre-page__back:hover {
+  color: var(--text);
+}
+
+.genre-page__count {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.genre-page__count .icon {
+  color: var(--accent);
+}
+
+.genre-page__grid {
+  margin-top: 10px;
+}
+
 .genre-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));

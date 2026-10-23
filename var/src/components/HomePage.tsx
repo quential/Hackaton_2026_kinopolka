@@ -1,4 +1,4 @@
-import type { Movie } from '../types/movie'
+import type { Genre, Movie } from '../types/movie'
 import Icon from './Icon'
 import { MoodPickerPanel } from './MoodPickerPanel'
 import { MovieRail } from './MovieRail'
@@ -7,6 +7,7 @@ type HomePageProps = {
   editorialMovies: Movie[]
   onRefresh: () => void
   onStartMoodQuiz: () => void
+  onOpenGenre: (genre: Genre) => void
   onSelect: (movie: Movie) => void
   onToggleSaved: (movie: Movie) => void
   popularMovies: Movie[]
@@ -14,16 +15,17 @@ type HomePageProps = {
 }
 
 const genreCards = [
-  { label: 'Драма', icon: '◌' },
-  { label: 'Комедия', icon: '✦' },
-  { label: 'Фантастика', icon: '◒' },
-  { label: 'Триллер', icon: '◉' },
-]
+  { label: 'Драма', value: 'драма', icon: '◌' },
+  { label: 'Комедия', value: 'комедия', icon: '✦' },
+  { label: 'Фантастика', value: 'фантастика', icon: '◒' },
+  { label: 'Триллер', value: 'триллер', icon: '◉' },
+] satisfies Array<{ label: string; value: Genre; icon: string }>
 
 export function HomePage({
   editorialMovies,
   onRefresh,
   onStartMoodQuiz,
+  onOpenGenre,
   onSelect,
   onToggleSaved,
   popularMovies,
@@ -55,7 +57,7 @@ export function HomePage({
         </div>
         <div className="genre-grid">
           {genreCards.map((genre) => (
-            <button className="genre-card" key={genre.label} type="button">
+            <button className="genre-card" key={genre.value} onClick={() => onOpenGenre(genre.value)} type="button">
               <span className="genre-card__icon">{genre.icon}</span>
               <span>{genre.label}</span>
               <Icon name="chevron-right" size={18} />
