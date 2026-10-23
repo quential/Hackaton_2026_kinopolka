@@ -81,12 +81,13 @@ export function CatalogPage({
 
       {filteredMovies.length > 0 ? (
         <div className="movie-grid">
-          {filteredMovies.map((movie) => (
+          {filteredMovies.map((movie, index) => (
             <MovieCard
               key={movie.id}
               movie={movie}
               onSelect={onSelect}
               onToggleSaved={onToggleSaved}
+              priority={index < 4}
               saved={savedIds.has(movie.id)}
             />
           ))}

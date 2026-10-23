@@ -18,6 +18,29 @@ const THEME_STORAGE_KEY = 'kinopolka-theme'
 const SAVED_STORAGE_KEY = 'kinopolka-saved'
 const REVIEWS_STORAGE_KEY = 'kinopolka-reviews'
 const INTRO_STORAGE_KEY = 'kinopolka-intro-seen'
+const EDITORIAL_PAGE_SIZE = 10
+const editorialGenres = ['драма', 'комедия', 'фантастика', 'триллер'] as const
+
+type EditorialGenre = (typeof editorialGenres)[number]
+type EditorialSelection = {
+  index: number
+  movies: Movie[]
+}
+
+function getRandomEditorialMovies(movies: Movie[], genre: EditorialGenre) {
+  const sameGenreMovies = movies.filter((movie) => movie.genres.includes(genre))
+  const shuffledMovies = [...sameGenreMovies]
+
+  for (let index = shuffledMovies.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(Math.random() * (index + 1))
+    ;[shuffledMovies[index], shuffledMovies[randomIndex]] = [
+      shuffledMovies[randomIndex],
+      shuffledMovies[index],
+    ]
+  }
+
+  return shuffledMovies.slice(0, EDITORIAL_PAGE_SIZE)
+}
 
 function getInitialTheme(): Theme {
   const storedTheme = window.localStorage.getItem(THEME_STORAGE_KEY)
@@ -71,7 +94,7 @@ function getInitialReviewsByMovie(): MovieReviewsById {
 
 function App() {
   const [activeView, setActiveView] = useState<AppView>('home')
-  const [editorialOffset, setEditorialOffset] = useState(0)
+  const [editorialSelection, setEditorialSelection] = useState<EditorialSelection>({ index: 0, movies: [] })
   const [isLoading, setIsLoading] = useState(true)
   const [loadError, setLoadError] = useState<string | null>(null)
   const [modalMovie, setModalMovie] = useState<Movie | null>(null)
@@ -89,7 +112,13 @@ function App() {
     setLoadError(null)
 
     fetchMovies()
-      .then((nextMovies) => setMovies(nextMovies))
+      .then((nextMovies) => {
+        setMovies(nextMovies)
+        setEditorialSelection({
+          index: 0,
+          movies: getRandomEditorialMovies(nextMovies, editorialGenres[0]),
+        })
+      })
       .catch((error: unknown) => {
         setLoadError(error instanceof Error ? error.message : 'Попробуйте загрузить каталог ещё раз.')
       })
@@ -120,13 +149,7 @@ function App() {
     return () => window.clearTimeout(timeoutId)
   }, [toastMessage])
 
-  const editorialMovies = useMemo(() => {
-    if (movies.length === 0) return []
-    const curated = movies.filter((movie) => movie.isEditorsChoice)
-    const source = curated.length >= 6 ? curated : movies
-    const offset = editorialOffset % source.length
-    return [...source.slice(offset), ...source.slice(0, offset)].slice(0, 7)
-  }, [editorialOffset, movies])
+  const editorialMovies = editorialSelection.movies
 
   const popularMovies = useMemo(
     () => [...movies].sort((first, second) => second.rating - first.rating).slice(0, 10),
@@ -210,7 +233,17 @@ function App() {
           {!isLoading && !loadError && activeView === 'home' && (
             <HomePage
               editorialMovies={editorialMovies}
-              onRefresh={() => setEditorialOffset((offset) => offset + 1)}
+              onRefresh={() =>
+                setEditorialSelection((currentSelection) => {
+                  const nextIndex = currentSelection.index + 1
+                  const nextGenre = editorialGenres[nextIndex % editorialGenres.length]
+
+                  return {
+                    index: nextIndex,
+                    movies: getRandomEditorialMovies(movies, nextGenre),
+                  }
+                })
+              }
               onSelect={setModalMovie}
               onToggleSaved={toggleSaved}
               popularMovies={popularMovies}

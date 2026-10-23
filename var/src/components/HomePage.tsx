@@ -41,6 +41,7 @@ export function HomePage({
         onToggleSaved={onToggleSaved}
         savedIds={savedIds}
         title="Выбор редакции"
+        variant="editorial"
       />
 
       <section className="content-section genre-section">

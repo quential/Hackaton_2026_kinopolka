@@ -24,12 +24,13 @@ export function SavedPage({ movies, onSelect, onToggleSaved, savedIds }: SavedPa
 
       {savedMovies.length > 0 ? (
         <div className="movie-grid">
-          {savedMovies.map((movie) => (
+          {savedMovies.map((movie, index) => (
             <MovieCard
               key={movie.id}
               movie={movie}
               onSelect={onSelect}
               onToggleSaved={onToggleSaved}
+              priority={index < 4}
               saved
             />
           ))}

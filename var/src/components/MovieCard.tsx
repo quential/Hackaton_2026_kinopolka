@@ -5,10 +5,11 @@ type MovieCardProps = {
   movie: Movie
   onSelect: (movie: Movie) => void
   onToggleSaved: (movie: Movie) => void
+  priority?: boolean
   saved: boolean
 }
 
-export function MovieCard({ movie, onSelect, onToggleSaved, saved }: MovieCardProps) {
+export function MovieCard({ movie, onSelect, onToggleSaved, priority = false, saved }: MovieCardProps) {
   return (
     <article className="movie-card">
       <div className="movie-card__surface">
@@ -19,7 +20,14 @@ export function MovieCard({ movie, onSelect, onToggleSaved, saved }: MovieCardPr
           type="button"
         >
           <span className="movie-card__poster-wrap">
-            <img alt={`Постер фильма «${movie.title}»`} className="movie-card__poster" loading="lazy" src={movie.poster} />
+            <img
+              alt={`Постер фильма «${movie.title}»`}
+              className="movie-card__poster"
+              decoding="async"
+              fetchPriority={priority ? 'high' : 'auto'}
+              loading={priority ? 'eager' : 'lazy'}
+              src={movie.poster}
+            />
             <span className="movie-card__rating">
               <Icon name="star" size={13} />
               {movie.rating.toFixed(1)}
