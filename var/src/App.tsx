@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
+import { Navigate, Route, Routes, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { fetchMovies } from './api/movies'
 import { CatalogPage } from './components/CatalogPage'
 import { ErrorState } from './components/ErrorState'
@@ -27,6 +28,63 @@ type EditorialGenre = (typeof editorialGenres)[number]
 type EditorialSelection = {
   index: number
   movies: Movie[]
+}
+
+const genreSlugs: Record<Genre, string> = {
+  драма: 'drama',
+  комедия: 'comedy',
+  фантастика: 'sci-fi',
+  триллер: 'thriller',
+}
+
+const genresBySlug: Record<string, Genre> = Object.fromEntries(
+  Object.entries(genreSlugs).map(([genre, slug]) => [slug, genre]),
+) as Record<string, Genre>
+
+const viewPaths: Record<Exclude<AppView, 'genre'>, string> = {
+  home: '/',
+  catalog: '/catalog',
+  saved: '/saved',
+  mood: '/mood',
+}
+
+function getRouteForView(view: AppView, genre: Genre = 'драма') {
+  if (view === 'genre') return `/genre/${genreSlugs[genre]}`
+  return viewPaths[view]
+}
+
+function getViewFromPath(pathname: string): AppView {
+  if (pathname.startsWith('/catalog')) return 'catalog'
+  if (pathname.startsWith('/saved')) return 'saved'
+  if (pathname.startsWith('/mood')) return 'mood'
+  if (pathname.startsWith('/genre')) return 'genre'
+  return 'home'
+}
+
+type GenreRouteProps = {
+  movies: Movie[]
+  onBack: () => void
+  onSelect: (movie: Movie) => void
+  onToggleSaved: (movie: Movie) => void
+  savedIds: Set<string>
+}
+
+function GenreRoute({ movies, onBack, onSelect, onToggleSaved, savedIds }: GenreRouteProps) {
+  const { genre: genreSlug } = useParams<{ genre: string }>()
+  const genre = genreSlug ? genresBySlug[genreSlug] : undefined
+
+  if (!genre) return <Navigate replace to="/" />
+
+  return (
+    <GenrePage
+      genre={genre}
+      movies={movies}
+      onBack={onBack}
+      onSelect={onSelect}
+      onToggleSaved={onToggleSaved}
+      savedIds={savedIds}
+    />
+  )
 }
 
 function getRandomEditorialMovies(movies: Movie[], genre: EditorialGenre) {
@@ -95,8 +153,9 @@ function getInitialReviewsByMovie(): MovieReviewsById {
 }
 
 function App() {
-  const [activeView, setActiveView] = useState<AppView>('home')
-  const [activeGenre, setActiveGenre] = useState<Genre>('драма')
+  const location = useLocation()
+  const routerNavigate = useNavigate()
+  const activeView = getViewFromPath(location.pathname)
   const [editorialSelection, setEditorialSelection] = useState<EditorialSelection>({ index: 0, movies: [] })
   const [isLoading, setIsLoading] = useState(true)
   const [loadError, setLoadError] = useState<string | null>(null)
@@ -105,7 +164,7 @@ function App() {
   const [reviewsByMovieId, setReviewsByMovieId] = useState<MovieReviewsById>(getInitialReviewsByMovie)
   const [savedIds, setSavedIds] = useState<Set<string>>(getInitialSavedIds)
   const [showWelcome, setShowWelcome] = useState(
-    () => window.sessionStorage.getItem(INTRO_STORAGE_KEY) !== 'true',
+    () => location.pathname === '/' && window.sessionStorage.getItem(INTRO_STORAGE_KEY) !== 'true',
   )
   const [theme, setTheme] = useState<Theme>(getInitialTheme)
   const [toastMessage, setToastMessage] = useState<string | null>(null)
@@ -152,18 +211,10 @@ function App() {
     return () => window.clearTimeout(timeoutId)
   }, [toastMessage])
 
-  const editorialMovies = editorialSelection.movies
+  useEffect(() => {
+    if (showWelcome) return
 
-  const popularMovies = useMemo(
-    () => [...movies].sort((first, second) => second.rating - first.rating).slice(0, 10),
-    [movies],
-  )
-
-  const navigate = (view: AppView) => {
-    setActiveView(view)
-    setShowWelcome(false)
-    window.sessionStorage.setItem(INTRO_STORAGE_KEY, 'true')
-    window.requestAnimationFrame(() => {
+    const frameId = window.requestAnimationFrame(() => {
       const content = document.getElementById('app-content')
       if (!content) return
 
@@ -176,6 +227,21 @@ function App() {
         behavior: 'smooth',
       })
     })
+
+    return () => window.cancelAnimationFrame(frameId)
+  }, [location.pathname, showWelcome])
+
+  const editorialMovies = editorialSelection.movies
+
+  const popularMovies = useMemo(
+    () => [...movies].sort((first, second) => second.rating - first.rating).slice(0, 10),
+    [movies],
+  )
+
+  const navigate = (view: AppView, genre?: Genre) => {
+    setShowWelcome(false)
+    window.sessionStorage.setItem(INTRO_STORAGE_KEY, 'true')
+    routerNavigate(getRouteForView(view, genre))
   }
 
   const toggleSaved = (movie: Movie) => {
@@ -193,8 +259,7 @@ function App() {
   }
 
   const openGenre = (genre: Genre) => {
-    setActiveGenre(genre)
-    navigate('genre')
+    navigate('genre', genre)
   }
 
   const watchMovie = (movie: Movie) => {
@@ -237,63 +302,82 @@ function App() {
       ) : (
         <div className="app-content" id="app-content">
           {isLoading && <LoadingState />}
-          {!isLoading && loadError && <ErrorState message={loadError} onRetry={loadCatalog} />}
-          {!isLoading && !loadError && activeView === 'home' && (
-            <HomePage
-              editorialMovies={editorialMovies}
-              onRefresh={() =>
-                setEditorialSelection((currentSelection) => {
-                  const nextIndex = currentSelection.index + 1
-                  const nextGenre = editorialGenres[nextIndex % editorialGenres.length]
+      {!isLoading && loadError && <ErrorState message={loadError} onRetry={loadCatalog} />}
+          {!isLoading && !loadError && (
+            <Routes>
+              <Route
+                element={
+                  <HomePage
+                    editorialMovies={editorialMovies}
+                    onRefresh={() =>
+                      setEditorialSelection((currentSelection) => {
+                        const nextIndex = currentSelection.index + 1
+                        const nextGenre = editorialGenres[nextIndex % editorialGenres.length]
 
-                  return {
-                    index: nextIndex,
-                    movies: getRandomEditorialMovies(movies, nextGenre),
-                  }
-                })
-              }
-              onStartMoodQuiz={() => navigate('mood')}
-              onOpenGenre={openGenre}
-              onSelect={setModalMovie}
-              onToggleSaved={toggleSaved}
-              popularMovies={popularMovies}
-              savedIds={savedIds}
-            />
-          )}
-          {!isLoading && !loadError && activeView === 'catalog' && (
-            <CatalogPage
-              movies={movies}
-              onSelect={setModalMovie}
-              onToggleSaved={toggleSaved}
-              savedIds={savedIds}
-            />
-          )}
-          {!isLoading && !loadError && activeView === 'mood' && (
-            <MoodQuizPage
-              movies={movies}
-              onBack={() => navigate('home')}
-              onSelect={setModalMovie}
-              onToggleSaved={toggleSaved}
-              savedIds={savedIds}
-            />
-          )}
-          {!isLoading && !loadError && activeView === 'genre' && (
-            <GenrePage
-              genre={activeGenre}
-              movies={movies}
-              onBack={() => navigate('home')}
-              onSelect={setModalMovie}
-              onToggleSaved={toggleSaved}
-              savedIds={savedIds}
-            />
-          )}
-          {!isLoading && !loadError && activeView === 'saved' && (
-            <SavedPage
-              movies={movies}
-              onSelect={setModalMovie}
-              onToggleSaved={toggleSaved}
-              savedIds={savedIds}
-            />
+                        return {
+                          index: nextIndex,
+                          movies: getRandomEditorialMovies(movies, nextGenre),
+                        }
+                      })
+                    }
+                    onStartMoodQuiz={() => navigate('mood')}
+                    onOpenGenre={openGenre}
+                    onSelect={setModalMovie}
+                    onToggleSaved={toggleSaved}
+                    popularMovies={popularMovies}
+                    savedIds={savedIds}
+                  />
+                }
+                path="/"
+              />
+              <Route
+                element={
+                  <CatalogPage
+                    movies={movies}
+                    onSelect={setModalMovie}
+                    onToggleSaved={toggleSaved}
+                    savedIds={savedIds}
+                  />
+                }
+                path="/catalog"
+              />
+              <Route
+                element={
+                  <MoodQuizPage
+                    movies={movies}
+                    onBack={() => navigate('home')}
+                    onSelect={setModalMovie}
+                    onToggleSaved={toggleSaved}
+                    savedIds={savedIds}
+                  />
+                }
+                path="/mood"
+              />
+              <Route
+                element={
+                  <GenreRoute
+                    movies={movies}
+                    onBack={() => navigate('home')}
+                    onSelect={setModalMovie}
+                    onToggleSaved={toggleSaved}
+                    savedIds={savedIds}
+                  />
+                }
+                path="/genre/:genre"
+              />
+              <Route
+                element={
+                  <SavedPage
+                    movies={movies}
+                    onSelect={setModalMovie}
+                    onToggleSaved={toggleSaved}
+                    savedIds={savedIds}
+                  />
+                }
+                path="/saved"
+              />
+              <Route element={<Navigate replace to="/" />} path="*" />
+            </Routes>
           )}
         </div>
       )}
