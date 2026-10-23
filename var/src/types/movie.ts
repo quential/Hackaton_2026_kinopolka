@@ -27,5 +27,6 @@ export type Movie = {
   description: string
   poster: string
   posterSource: string
+  watchUrl: string
   isEditorsChoice: boolean
 }

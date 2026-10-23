@@ -5,19 +5,26 @@
     "originalTitle": "The Shawshank Redemption",
     "year": 1994,
     "genre": "драма",
-    "genres": ["драма"],
+    "genres": [
+      "драма"
+    ],
     "rating": 9.3,
     "votes": 2814000,
     "duration": 142,
     "country": "США",
     "ageRating": "16+",
     "director": "Фрэнк Дарабонт",
-    "cast": ["Тим Роббинс", "Морган Фриман", "Боб Гантон"],
+    "cast": [
+      "Тим Роббинс",
+      "Морган Фриман",
+      "Боб Гантон"
+    ],
     "tagline": "Надежда — хорошая вещь, возможно, лучшая из всех.",
     "description": "Несправедливо осуждённый банкир Энди Дюфрейн пытается сохранить достоинство и надежду в суровой тюрьме Шоушенк. Здесь он находит настоящую дружбу и начинает бороться за свободу.",
     "poster": "/posters/the-shawshank-redemption.jpg",
     "posterSource": "https://image.tmdb.org/t/p/w500/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
-    "isEditorsChoice": true
+    "isEditorsChoice": true,
+    "watchUrl": "https://rutube.ru/video/7f3ee9c08a1dc180226e6eca50d44e80/"
   },
   {
     "id": "interstellar",
@@ -25,19 +32,27 @@
     "originalTitle": "Interstellar",
     "year": 2014,
     "genre": "фантастика",
-    "genres": ["фантастика", "драма"],
+    "genres": [
+      "фантастика",
+      "драма"
+    ],
     "rating": 8.7,
     "votes": 2287000,
     "duration": 169,
     "country": "США, Великобритания",
     "ageRating": "12+",
     "director": "Кристофер Нолан",
-    "cast": ["Мэттью Макконахи", "Энн Хэтэуэй", "Джессика Честейн"],
+    "cast": [
+      "Мэттью Макконахи",
+      "Энн Хэтэуэй",
+      "Джессика Честейн"
+    ],
     "tagline": "Человечество родилось на Земле. Ему не суждено умереть здесь.",
     "description": "Когда Земля становится непригодной для жизни, бывший пилот Купер отправляется через червоточину на поиски нового дома для человечества. На кону — будущее планеты и связь с дочерью.",
     "poster": "/posters/interstellar.jpg",
     "posterSource": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
-    "isEditorsChoice": true
+    "isEditorsChoice": true,
+    "watchUrl": "https://rutube.ru/video/854ce20ade387f87041ca1e29e002448/"
   },
   {
     "id": "inception",
@@ -45,19 +60,27 @@
     "originalTitle": "Inception",
     "year": 2010,
     "genre": "триллер",
-    "genres": ["триллер", "фантастика"],
+    "genres": [
+      "триллер",
+      "фантастика"
+    ],
     "rating": 8.8,
     "votes": 2609000,
     "duration": 148,
     "country": "США, Великобритания",
     "ageRating": "12+",
     "director": "Кристофер Нолан",
-    "cast": ["Леонардо Ди Каприо", "Джозеф Гордон-Левитт", "Эллиот Пейдж"],
+    "cast": [
+      "Леонардо Ди Каприо",
+      "Джозеф Гордон-Левитт",
+      "Эллиот Пейдж"
+    ],
     "tagline": "Твой разум — место преступления.",
     "description": "Дом Кобб умеет проникать в сны и красть секреты из подсознания. Теперь ему предлагают невозможное задание — не украсть идею, а внедрить её в чужой разум.",
     "poster": "/posters/inception.jpg",
     "posterSource": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
-    "isEditorsChoice": true
+    "isEditorsChoice": true,
+    "watchUrl": "https://rutube.ru/video/ea43cf269f1fbb2bdbe53468f1bdb4a8/"
   },
   {
     "id": "the-grand-budapest-hotel",
@@ -65,19 +88,27 @@
     "originalTitle": "The Grand Budapest Hotel",
     "year": 2014,
     "genre": "комедия",
-    "genres": ["комедия", "драма"],
+    "genres": [
+      "комедия",
+      "драма"
+    ],
     "rating": 8.1,
     "votes": 930000,
     "duration": 100,
     "country": "Германия, США",
     "ageRating": "16+",
     "director": "Уэс Андерсон",
-    "cast": ["Рэйф Файнс", "Тони Револори", "Сирша Ронан"],
+    "cast": [
+      "Рэйф Файнс",
+      "Тони Револори",
+      "Сирша Ронан"
+    ],
     "tagline": "Ничто не держится вечно.",
     "description": "Легендарный консьерж месье Густав и его юный помощник оказываются втянуты в историю с наследством, похищенной картиной и погоней через всю Европу.",
     "poster": "/posters/the-grand-budapest-hotel.jpg",
     "posterSource": "https://image.tmdb.org/t/p/w500/eWdyYQreja6JGCzqHWXpWHDrrPo.jpg",
-    "isEditorsChoice": true
+    "isEditorsChoice": true,
+    "watchUrl": "https://rutube.ru/video/9cab8bed77b48963530157895dba0df0/"
   },
   {
     "id": "spirited-away",
@@ -85,19 +116,27 @@
     "originalTitle": "Spirited Away",
     "year": 2001,
     "genre": "фантастика",
-    "genres": ["фантастика", "драма"],
+    "genres": [
+      "фантастика",
+      "драма"
+    ],
     "rating": 8.6,
     "votes": 870000,
     "duration": 125,
     "country": "Япония",
     "ageRating": "12+",
     "director": "Хаяо Миядзаки",
-    "cast": ["Руми Хиираги", "Мию Ирино", "Мари Нацуки"],
+    "cast": [
+      "Руми Хиираги",
+      "Мию Ирино",
+      "Мари Нацуки"
+    ],
     "tagline": "Добро пожаловать в мир духов.",
     "description": "Десятилетняя Тихиро попадает в загадочный мир духов и должна найти в себе смелость, чтобы спасти родителей и вернуться домой.",
     "poster": "/posters/spirited-away.jpg",
     "posterSource": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/search/?query=%D0%A3%D0%BD%D0%B5%D1%81%D1%91%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BF%D1%80%D0%B8%D0%B7%D1%80%D0%B0%D0%BA%D0%B0%D0%BC%D0%B8%202001"
   },
   {
     "id": "the-matrix",
@@ -105,19 +144,27 @@
     "originalTitle": "The Matrix",
     "year": 1999,
     "genre": "фантастика",
-    "genres": ["фантастика", "триллер"],
+    "genres": [
+      "фантастика",
+      "триллер"
+    ],
     "rating": 8.7,
     "votes": 2105000,
     "duration": 136,
     "country": "США, Австралия",
     "ageRating": "16+",
     "director": "Лана и Лилли Вачовски",
-    "cast": ["Киану Ривз", "Лоренс Фишбёрн", "Кэрри-Энн Мосс"],
+    "cast": [
+      "Киану Ривз",
+      "Лоренс Фишбёрн",
+      "Кэрри-Энн Мосс"
+    ],
     "tagline": "Добро пожаловать в реальный мир.",
     "description": "Программист Нео узнаёт, что привычный мир — иллюзия, созданная машинами. Ему предстоит выбрать между комфортной ложью и опасной правдой.",
     "poster": "/posters/the-matrix.jpg",
     "posterSource": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/b711dccc1e09f21f5c38f7ede7942659/"
   },
   {
     "id": "whiplash",
@@ -125,19 +172,27 @@
     "originalTitle": "Whiplash",
     "year": 2014,
     "genre": "драма",
-    "genres": ["драма", "триллер"],
+    "genres": [
+      "драма",
+      "триллер"
+    ],
     "rating": 8.5,
     "votes": 1006000,
     "duration": 107,
     "country": "США",
     "ageRating": "16+",
     "director": "Дэмьен Шазелл",
-    "cast": ["Майлз Теллер", "Дж. К. Симмонс", "Пол Райзер"],
+    "cast": [
+      "Майлз Теллер",
+      "Дж. К. Симмонс",
+      "Пол Райзер"
+    ],
     "tagline": "Если не добиваться большего, зачем вообще жить?",
     "description": "Молодой барабанщик Эндрю мечтает стать великим музыкантом. Его талант сталкивается с жёстким преподавателем, который требует идеального результата любой ценой.",
     "poster": "/posters/whiplash.jpg",
     "posterSource": "https://image.tmdb.org/t/p/w500/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/7f9207eb7a8f1d8cbb0e360e6f39ae12/"
   },
   {
     "id": "parasite",
@@ -145,19 +200,28 @@
     "originalTitle": "Parasite",
     "year": 2019,
     "genre": "триллер",
-    "genres": ["триллер", "драма", "комедия"],
+    "genres": [
+      "триллер",
+      "драма",
+      "комедия"
+    ],
     "rating": 8.5,
     "votes": 1007000,
     "duration": 132,
     "country": "Южная Корея",
     "ageRating": "16+",
     "director": "Пон Джун-хо",
-    "cast": ["Сон Кан-хо", "Ли Сон-гюн", "Чо Ё-джон"],
+    "cast": [
+      "Сон Кан-хо",
+      "Ли Сон-гюн",
+      "Чо Ё-джон"
+    ],
     "tagline": "Актёры, которым нужна роль.",
     "description": "Бедная семья постепенно входит в доверие к состоятельным хозяевам дома. Безобидная на первый взгляд схема превращается в напряжённую историю о неравенстве и тайнах.",
     "poster": "/posters/parasite.jpg",
     "posterSource": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/search/?query=%D0%9F%D0%B0%D1%80%D0%B0%D0%B7%D0%B8%D1%82%D1%8B%202019"
   },
   {
     "id": "the-green-mile",
@@ -165,19 +229,27 @@
     "originalTitle": "The Green Mile",
     "year": 1999,
     "genre": "драма",
-    "genres": ["драма", "фантастика"],
+    "genres": [
+      "драма",
+      "фантастика"
+    ],
     "rating": 8.6,
     "votes": 1406000,
     "duration": 189,
     "country": "США",
     "ageRating": "16+",
     "director": "Фрэнк Дарабонт",
-    "cast": ["Том Хэнкс", "Майкл Кларк Дункан", "Дэвид Морс"],
+    "cast": [
+      "Том Хэнкс",
+      "Майкл Кларк Дункан",
+      "Дэвид Морс"
+    ],
     "tagline": "Иногда чудо приходит в самое неожиданное место.",
     "description": "Надзиратель блока смертников знакомится с необычным заключённым, обладающим загадочным даром. Эта встреча навсегда меняет его представление о справедливости и милосердии.",
     "poster": "/posters/the-green-mile.jpg",
     "posterSource": "https://image.tmdb.org/t/p/w500/8VG8fDNiy50H4FedGwdSVUPoaJe.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/b5c4021d29fac53e548c6d0d92fb55d2/"
   },
   {
     "id": "la-la-land",
@@ -185,19 +257,27 @@
     "originalTitle": "La La Land",
     "year": 2016,
     "genre": "комедия",
-    "genres": ["комедия", "драма"],
-    "rating": 8.0,
+    "genres": [
+      "комедия",
+      "драма"
+    ],
+    "rating": 8,
     "votes": 690000,
     "duration": 128,
     "country": "США",
     "ageRating": "12+",
     "director": "Дэмьен Шазелл",
-    "cast": ["Райан Гослинг", "Эмма Стоун", "Джон Ледженд"],
+    "cast": [
+      "Райан Гослинг",
+      "Эмма Стоун",
+      "Джон Ледженд"
+    ],
     "tagline": "Вот тем, кто мечтает.",
     "description": "Актриса Миа и джазовый пианист Себастьян встречаются в Лос-Анджелесе и влюбляются друг в друга. Им предстоит понять, как совместить большую любовь и ещё большие мечты.",
     "poster": "/posters/la-la-land.jpg",
     "posterSource": "https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/a5bd6c5025b752ca164cdd52dba96c30/"
   },
   {
     "id": "the-godfather",
@@ -205,19 +285,27 @@
     "originalTitle": "The Godfather",
     "year": 1972,
     "genre": "драма",
-    "genres": ["драма", "триллер"],
+    "genres": [
+      "драма",
+      "триллер"
+    ],
     "rating": 9.2,
     "votes": 2050000,
     "duration": 175,
     "country": "США",
     "ageRating": "16+",
     "director": "Фрэнсис Форд Коппола",
-    "cast": ["Марлон Брандо", "Аль Пачино", "Джеймс Каан"],
+    "cast": [
+      "Марлон Брандо",
+      "Аль Пачино",
+      "Джеймс Каан"
+    ],
     "tagline": "Предложение, от которого невозможно отказаться.",
     "description": "Дон Корлеоне управляет могущественной семьёй и пытается передать свои принципы сыну Майклу. Семейная история постепенно превращается в эпическую сагу о власти, верности и цене выбора.",
     "poster": "/posters/the-godfather.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/qSxQGH3HVXLpGkTJGsMKK0o9WBR.jpg",
-    "isEditorsChoice": true
+    "isEditorsChoice": true,
+    "watchUrl": "https://rutube.ru/video/762745b004294fa36f63293821bc8aa6/"
   },
   {
     "id": "the-dark-knight",
@@ -225,19 +313,27 @@
     "originalTitle": "The Dark Knight",
     "year": 2008,
     "genre": "триллер",
-    "genres": ["триллер", "драма"],
-    "rating": 9.0,
+    "genres": [
+      "триллер",
+      "драма"
+    ],
+    "rating": 9,
     "votes": 3210000,
     "duration": 152,
     "country": "США, Великобритания",
     "ageRating": "16+",
     "director": "Кристофер Нолан",
-    "cast": ["Кристиан Бэйл", "Хит Леджер", "Аарон Экхарт"],
+    "cast": [
+      "Кристиан Бэйл",
+      "Хит Леджер",
+      "Аарон Экхарт"
+    ],
     "tagline": "Почему так серьёзно?",
     "description": "Бэтмен усиливает борьбу с преступностью в Готэме, но появление непредсказуемого Джокера заставляет город и его защитника столкнуться с настоящим хаосом.",
     "poster": "/posters/the-dark-knight.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/o4DT1wd7TNpvdX5WcGjfiC8dUsY.jpg",
-    "isEditorsChoice": true
+    "isEditorsChoice": true,
+    "watchUrl": "https://rutube.ru/video/f6065b90095c0d1884e7dc563a4add14/"
   },
   {
     "id": "pulp-fiction",
@@ -245,19 +341,27 @@
     "originalTitle": "Pulp Fiction",
     "year": 1994,
     "genre": "триллер",
-    "genres": ["триллер", "комедия"],
+    "genres": [
+      "триллер",
+      "комедия"
+    ],
     "rating": 8.9,
     "votes": 2900000,
     "duration": 154,
     "country": "США",
     "ageRating": "18+",
     "director": "Квентин Тарантино",
-    "cast": ["Джон Траволта", "Сэмюэл Л. Джексон", "Ума Турман"],
+    "cast": [
+      "Джон Траволта",
+      "Сэмюэл Л. Джексон",
+      "Ума Турман"
+    ],
     "tagline": "Несколько историй. Один город. Никаких правил.",
     "description": "Истории наёмников, боксёра, гангстерской пары и случайных попутчиков переплетаются в Лос-Анджелесе, где самый обычный день легко превращается в криминальное приключение.",
     "poster": "/posters/pulp-fiction.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/lmenG02ILZN904Tc4XFc5WfJFbd.jpg",
-    "isEditorsChoice": true
+    "isEditorsChoice": true,
+    "watchUrl": "https://rutube.ru/video/a3011f67108068dd50c0cdd85b7b8a29/"
   },
   {
     "id": "forrest-gump",
@@ -265,19 +369,27 @@
     "originalTitle": "Forrest Gump",
     "year": 1994,
     "genre": "драма",
-    "genres": ["драма", "комедия"],
+    "genres": [
+      "драма",
+      "комедия"
+    ],
     "rating": 8.8,
     "votes": 2300000,
     "duration": 142,
     "country": "США",
     "ageRating": "12+",
     "director": "Роберт Земекис",
-    "cast": ["Том Хэнкс", "Робин Райт", "Гэри Синиз"],
+    "cast": [
+      "Том Хэнкс",
+      "Робин Райт",
+      "Гэри Синиз"
+    ],
     "tagline": "Жизнь похожа на коробку конфет.",
     "description": "Форрест Гамп проходит через важнейшие события американской истории, оставаясь добрым, честным и верным людям, которых любит.",
     "poster": "/posters/forrest-gump.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/saHP97rTPS5eLmrLQEcANmKrsFl.jpg",
-    "isEditorsChoice": true
+    "isEditorsChoice": true,
+    "watchUrl": "https://rutube.ru/video/0110b8f621971fa81f83f79e3edcee67/"
   },
   {
     "id": "fight-club",
@@ -285,19 +397,27 @@
     "originalTitle": "Fight Club",
     "year": 1999,
     "genre": "триллер",
-    "genres": ["триллер", "драма"],
+    "genres": [
+      "триллер",
+      "драма"
+    ],
     "rating": 8.8,
     "votes": 2400000,
     "duration": 139,
     "country": "США, Германия",
     "ageRating": "18+",
     "director": "Дэвид Финчер",
-    "cast": ["Брэд Питт", "Эдвард Нортон", "Хелена Бонэм Картер"],
+    "cast": [
+      "Брэд Питт",
+      "Эдвард Нортон",
+      "Хелена Бонэм Картер"
+    ],
     "tagline": "Первое правило клуба — никому не рассказывать о клубе.",
     "description": "Скучающий офисный работник знакомится с харизматичным Тайлером Дёрденом. Вместе они создают подпольный клуб, который быстро выходит далеко за рамки обычных боёв.",
     "poster": "/posters/fight-club.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/jSziioSwPVrOy9Yow3XhWIBDjq1.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/df90c64749f7e553ff97b20a54e0f3b5/"
   },
   {
     "id": "goodfellas",
@@ -305,19 +425,27 @@
     "originalTitle": "GoodFellas",
     "year": 1990,
     "genre": "драма",
-    "genres": ["драма", "триллер"],
+    "genres": [
+      "драма",
+      "триллер"
+    ],
     "rating": 8.7,
     "votes": 1300000,
     "duration": 145,
     "country": "США",
     "ageRating": "18+",
     "director": "Мартин Скорсезе",
-    "cast": ["Рэй Лиотта", "Роберт Де Ниро", "Джо Пеши"],
+    "cast": [
+      "Рэй Лиотта",
+      "Роберт Де Ниро",
+      "Джо Пеши"
+    ],
     "tagline": "Триумф. Власть. Деньги. И расплата.",
     "description": "Генри Хилл с детства мечтает стать гангстером и постепенно поднимается по криминальной лестнице. Но жизнь внутри мафии не оставляет места для спокойствия и доверия.",
     "poster": "/posters/goodfellas.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/qNUxyvJJ2H2Y6isQPz5tgGAFXzM.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/5b48d3743bc1f6f74350abd92660b699/"
   },
   {
     "id": "the-lord-of-the-rings-fellowship",
@@ -325,19 +453,27 @@
     "originalTitle": "The Lord of the Rings: The Fellowship of the Ring",
     "year": 2001,
     "genre": "фантастика",
-    "genres": ["фантастика", "драма"],
+    "genres": [
+      "фантастика",
+      "драма"
+    ],
     "rating": 8.9,
     "votes": 2000000,
     "duration": 178,
     "country": "Новая Зеландия, США",
     "ageRating": "12+",
     "director": "Питер Джексон",
-    "cast": ["Элайджа Вуд", "Иэн Маккеллен", "Вигго Мортенсен"],
+    "cast": [
+      "Элайджа Вуд",
+      "Иэн Маккеллен",
+      "Вигго Мортенсен"
+    ],
     "tagline": "Кольцо одно, чтобы править всеми.",
     "description": "Хоббит Фродо получает Кольцо Всевластия и отправляется в опасное путешествие, чтобы уничтожить его. К нему присоединяется Братство, которому предстоит пройти через Средиземье.",
     "poster": "/posters/the-lord-of-the-rings-fellowship.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/8IugVu4Vhf18igCDs4nXADEy9UR.jpg",
-    "isEditorsChoice": true
+    "isEditorsChoice": true,
+    "watchUrl": "https://rutube.ru/video/19bfb665a164217084d9a5b4d8a9e734/"
   },
   {
     "id": "the-lord-of-the-rings-two-towers",
@@ -345,19 +481,27 @@
     "originalTitle": "The Lord of the Rings: The Two Towers",
     "year": 2002,
     "genre": "фантастика",
-    "genres": ["фантастика", "драма"],
+    "genres": [
+      "фантастика",
+      "драма"
+    ],
     "rating": 8.8,
     "votes": 1800000,
     "duration": 179,
     "country": "Новая Зеландия, США",
     "ageRating": "12+",
     "director": "Питер Джексон",
-    "cast": ["Элайджа Вуд", "Иэн Маккеллен", "Вигго Мортенсен"],
+    "cast": [
+      "Элайджа Вуд",
+      "Иэн Маккеллен",
+      "Вигго Мортенсен"
+    ],
     "tagline": "Средиземье готовится к войне.",
     "description": "Братство распалось, а силы Саурона набирают мощь. Пока Фродо и Сэм ищут путь к Мордору, остальные герои готовятся защитить Рохан от огромной армии.",
     "poster": "/posters/the-lord-of-the-rings-two-towers.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/jGXpq0HBgFVQTJG6I1nGOGgm30c.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/5f4a7ad522e2d4f3b04807de5123cda5/"
   },
   {
     "id": "the-lord-of-the-rings-return-of-the-king",
@@ -365,19 +509,27 @@
     "originalTitle": "The Lord of the Rings: The Return of the King",
     "year": 2003,
     "genre": "фантастика",
-    "genres": ["фантастика", "драма"],
-    "rating": 9.0,
+    "genres": [
+      "фантастика",
+      "драма"
+    ],
+    "rating": 9,
     "votes": 1900000,
     "duration": 201,
     "country": "Новая Зеландия, США",
     "ageRating": "12+",
     "director": "Питер Джексон",
-    "cast": ["Элайджа Вуд", "Иэн Маккеллен", "Вигго Мортенсен"],
+    "cast": [
+      "Элайджа Вуд",
+      "Иэн Маккеллен",
+      "Вигго Мортенсен"
+    ],
     "tagline": "Эпоха заканчивается.",
     "description": "Финальная битва за Средиземье близка. Пока войско людей сдерживает силы тьмы, Фродо и Сэм делают последний шаг к огненной горе.",
     "poster": "/posters/the-lord-of-the-rings-return-of-the-king.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/bMhVmYTqLl0WHkzZLlUZjhqqPqL.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/522a3a48a554849e115e4b4a16c006b8/"
   },
   {
     "id": "gladiator",
@@ -385,19 +537,27 @@
     "originalTitle": "Gladiator",
     "year": 2000,
     "genre": "драма",
-    "genres": ["драма", "триллер"],
+    "genres": [
+      "драма",
+      "триллер"
+    ],
     "rating": 8.5,
     "votes": 1800000,
     "duration": 155,
     "country": "США, Великобритания",
     "ageRating": "16+",
     "director": "Ридли Скотт",
-    "cast": ["Рассел Кроу", "Хоакин Феникс", "Конни Нильсен"],
+    "cast": [
+      "Рассел Кроу",
+      "Хоакин Феникс",
+      "Конни Нильсен"
+    ],
     "tagline": "То, что мы делаем при жизни, отзывается в вечности.",
     "description": "Римский генерал Максимус теряет семью и становится рабом-гладиатором. На арене он получает шанс отомстить императору и вернуть себе честь.",
     "poster": "/posters/gladiator.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/1Rfe7tB085WTeYle2GGHQmZXvri.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/4282c18411899128b37d1dda827bef97/"
   },
   {
     "id": "titanic",
@@ -405,19 +565,26 @@
     "originalTitle": "Titanic",
     "year": 1997,
     "genre": "драма",
-    "genres": ["драма"],
+    "genres": [
+      "драма"
+    ],
     "rating": 7.9,
     "votes": 2500000,
     "duration": 194,
     "country": "США",
     "ageRating": "12+",
     "director": "Джеймс Кэмерон",
-    "cast": ["Леонардо Ди Каприо", "Кейт Уинслет", "Билли Зейн"],
+    "cast": [
+      "Леонардо Ди Каприо",
+      "Кейт Уинслет",
+      "Билли Зейн"
+    ],
     "tagline": "Ничто на Земле не сможет их разлучить.",
     "description": "На борту роскошного лайнера встречаются юная аристократка Роза и художник Джек. Их короткая история любви разворачивается на фоне первого и последнего плавания Титаника.",
     "poster": "/posters/titanic.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/0b3148377ecef0f0a70c3f081900e0a0/"
   },
   {
     "id": "avatar",
@@ -425,19 +592,27 @@
     "originalTitle": "Avatar",
     "year": 2009,
     "genre": "фантастика",
-    "genres": ["фантастика", "драма"],
+    "genres": [
+      "фантастика",
+      "драма"
+    ],
     "rating": 7.9,
     "votes": 3100000,
     "duration": 162,
     "country": "США",
     "ageRating": "12+",
     "director": "Джеймс Кэмерон",
-    "cast": ["Сэм Уортингтон", "Зои Салдана", "Сигурни Уивер"],
+    "cast": [
+      "Сэм Уортингтон",
+      "Зои Салдана",
+      "Сигурни Уивер"
+    ],
     "tagline": "В этом мире всё начинается с выбора.",
     "description": "Бывший морпех Джейк Салли отправляется на Пандору и получает возможность управлять телом аватара. Постепенно он начинает видеть этот мир глазами его жителей.",
     "poster": "/posters/avatar.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/6b5135798398073211926a779c3ca514/"
   },
   {
     "id": "dune",
@@ -445,19 +620,27 @@
     "originalTitle": "Dune",
     "year": 2021,
     "genre": "фантастика",
-    "genres": ["фантастика", "драма"],
-    "rating": 8.0,
+    "genres": [
+      "фантастика",
+      "драма"
+    ],
+    "rating": 8,
     "votes": 1300000,
     "duration": 155,
     "country": "США, Канада",
     "ageRating": "12+",
     "director": "Дени Вильнёв",
-    "cast": ["Тимоти Шаламе", "Ребекка Фергюсон", "Оскар Айзек"],
+    "cast": [
+      "Тимоти Шаламе",
+      "Ребекка Фергюсон",
+      "Оскар Айзек"
+    ],
     "tagline": "За пределами страха ждёт судьба.",
     "description": "Пол Атрейдес прибывает на пустынную планету Арракис, чтобы принять наследие семьи. Вскоре он оказывается в центре борьбы за самый ценный ресурс вселенной.",
     "poster": "/posters/dune.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/8xt4KPzAhKsA3tbHk2zJEUTywPs.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/1d657509fd99919735bb142ad3db985e/"
   },
   {
     "id": "oppenheimer",
@@ -465,19 +648,27 @@
     "originalTitle": "Oppenheimer",
     "year": 2023,
     "genre": "драма",
-    "genres": ["драма", "триллер"],
+    "genres": [
+      "драма",
+      "триллер"
+    ],
     "rating": 8.1,
     "votes": 1000000,
     "duration": 180,
     "country": "США, Великобритания",
     "ageRating": "16+",
     "director": "Кристофер Нолан",
-    "cast": ["Киллиан Мёрфи", "Эмили Блант", "Роберт Дауни-младший"],
+    "cast": [
+      "Киллиан Мёрфи",
+      "Эмили Блант",
+      "Роберт Дауни-младший"
+    ],
     "tagline": "Мир изменился навсегда.",
     "description": "История физика Роберта Оппенгеймера и команды учёных, создавших первое ядерное оружие. Научный прорыв приводит героя к тяжёлому моральному выбору.",
     "poster": "/posters/oppenheimer.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/a0321d7fd17f40b11b901161610770de/"
   },
   {
     "id": "the-prestige",
@@ -485,19 +676,27 @@
     "originalTitle": "The Prestige",
     "year": 2006,
     "genre": "триллер",
-    "genres": ["триллер", "драма"],
+    "genres": [
+      "триллер",
+      "драма"
+    ],
     "rating": 8.5,
     "votes": 1500000,
     "duration": 130,
     "country": "США, Великобритания",
     "ageRating": "12+",
     "director": "Кристофер Нолан",
-    "cast": ["Кристиан Бэйл", "Хью Джекман", "Скарлетт Йоханссон"],
+    "cast": [
+      "Кристиан Бэйл",
+      "Хью Джекман",
+      "Скарлетт Йоханссон"
+    ],
     "tagline": "Ты внимательно смотришь?",
     "description": "Два иллюзиониста превращают профессиональное соперничество в личную войну. Каждый готов пойти на всё, чтобы раскрыть секрет идеального трюка другого.",
     "poster": "/posters/the-prestige.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/Ag2B2KHKQPukjH7WutmgnnSNurZ.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/3d2c493189ca7abeac6ff591fe90bbac/"
   },
   {
     "id": "shutter-island",
@@ -505,19 +704,27 @@
     "originalTitle": "Shutter Island",
     "year": 2010,
     "genre": "триллер",
-    "genres": ["триллер", "драма"],
+    "genres": [
+      "триллер",
+      "драма"
+    ],
     "rating": 8.2,
     "votes": 1600000,
     "duration": 138,
     "country": "США",
     "ageRating": "16+",
     "director": "Мартин Скорсезе",
-    "cast": ["Леонардо Ди Каприо", "Марк Руффало", "Бен Кингсли"],
+    "cast": [
+      "Леонардо Ди Каприо",
+      "Марк Руффало",
+      "Бен Кингсли"
+    ],
     "tagline": "Что случилось с Эшклиффом?",
     "description": "Федеральный маршал прибывает на изолированный остров, где исчезла пациентка психиатрической клиники. Расследование постепенно заставляет его сомневаться в собственных воспоминаниях.",
     "poster": "/posters/shutter-island.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/6OUUKvzckvaCMvzn4ZydXXZyviq.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/cd337ead78bf4a227147d983a29bcd01/"
   },
   {
     "id": "arrival",
@@ -525,19 +732,27 @@
     "originalTitle": "Arrival",
     "year": 2016,
     "genre": "фантастика",
-    "genres": ["фантастика", "драма"],
+    "genres": [
+      "фантастика",
+      "драма"
+    ],
     "rating": 7.9,
     "votes": 850000,
     "duration": 116,
     "country": "США, Канада",
     "ageRating": "12+",
     "director": "Дени Вильнёв",
-    "cast": ["Эми Адамс", "Джереми Реннер", "Форест Уитакер"],
+    "cast": [
+      "Эми Адамс",
+      "Джереми Реннер",
+      "Форест Уитакер"
+    ],
     "tagline": "Язык — первый шаг к пониманию.",
     "description": "После появления загадочных кораблей по всему миру лингвист Луиза Бэнкс пытается установить контакт с пришельцами. От её работы зависит, начнётся ли диалог или война.",
     "poster": "/posters/arrival.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/pEzNVQfdzYDzVK0XqxERIw2x2se.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/8bf61fb42b7d0493d1daed8e3f7d231e/"
   },
   {
     "id": "blade-runner-2049",
@@ -545,19 +760,27 @@
     "originalTitle": "Blade Runner 2049",
     "year": 2017,
     "genre": "фантастика",
-    "genres": ["фантастика", "триллер"],
+    "genres": [
+      "фантастика",
+      "триллер"
+    ],
     "rating": 8.1,
     "votes": 680000,
     "duration": 164,
     "country": "США, Великобритания, Канада",
     "ageRating": "16+",
     "director": "Дени Вильнёв",
-    "cast": ["Райан Гослинг", "Харрисон Форд", "Ана де Армас"],
+    "cast": [
+      "Райан Гослинг",
+      "Харрисон Форд",
+      "Ана де Армас"
+    ],
     "tagline": "Мир изменился. История — нет.",
     "description": "Офицер Кей раскрывает тайну, способную разрушить остатки общества. Поиски приводят его к бывшему бегущему по лезвию Рику Декарду.",
     "poster": "/posters/blade-runner-2049.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/fbd9299eca041a8260dcb83394271af0/"
   },
   {
     "id": "mad-max-fury-road",
@@ -565,19 +788,27 @@
     "originalTitle": "Mad Max: Fury Road",
     "year": 2015,
     "genre": "триллер",
-    "genres": ["триллер", "фантастика"],
+    "genres": [
+      "триллер",
+      "фантастика"
+    ],
     "rating": 8.1,
     "votes": 1100000,
     "duration": 120,
     "country": "Австралия, США",
     "ageRating": "16+",
     "director": "Джордж Миллер",
-    "cast": ["Том Харди", "Шарлиз Терон", "Николас Холт"],
+    "cast": [
+      "Том Харди",
+      "Шарлиз Терон",
+      "Николас Холт"
+    ],
     "tagline": "Надежда живёт в пустыне.",
     "description": "В постапокалиптической пустыне Макс присоединяется к Фуриосе и группе беглянок. Вместе они пытаются вырваться из власти жестокого правителя.",
     "poster": "/posters/mad-max-fury-road.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/ulcAi4dKpAjHwYGS08vNyx9H6I9.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/443a55fd060d0d72359d30f3804ba6f9/"
   },
   {
     "id": "her",
@@ -585,19 +816,27 @@
     "originalTitle": "Her",
     "year": 2013,
     "genre": "фантастика",
-    "genres": ["фантастика", "драма"],
+    "genres": [
+      "фантастика",
+      "драма"
+    ],
     "rating": 7.9,
     "votes": 700000,
     "duration": 126,
     "country": "США",
     "ageRating": "16+",
     "director": "Спайк Джонз",
-    "cast": ["Хоакин Феникс", "Скарлетт Йоханссон", "Эми Адамс"],
+    "cast": [
+      "Хоакин Феникс",
+      "Скарлетт Йоханссон",
+      "Эми Адамс"
+    ],
     "tagline": "Между человеком и машиной может быть любовь.",
     "description": "Одинокий писатель покупает операционную систему с искусственным интеллектом и неожиданно находит в ней близкого собеседника. Их отношения заставляют его заново взглянуть на любовь.",
     "poster": "/posters/her.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/eCOtqtfvn7mxGl6nfmq4b1exJRc.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/4431bc9bb80bc80bccdfccb7e5d99cb9/"
   },
   {
     "id": "eternal-sunshine-of-the-spotless-mind",
@@ -605,19 +844,27 @@
     "originalTitle": "Eternal Sunshine of the Spotless Mind",
     "year": 2004,
     "genre": "драма",
-    "genres": ["драма", "фантастика"],
-    "rating": 8.0,
+    "genres": [
+      "драма",
+      "фантастика"
+    ],
+    "rating": 8,
     "votes": 1400000,
     "duration": 108,
     "country": "США",
     "ageRating": "16+",
     "director": "Мишель Гондри",
-    "cast": ["Джим Керри", "Кейт Уинслет", "Том Уилкинсон"],
+    "cast": [
+      "Джим Керри",
+      "Кейт Уинслет",
+      "Том Уилкинсон"
+    ],
     "tagline": "Можно ли забыть того, кого любишь?",
     "description": "После болезненного расставания Джоэл узнаёт, что его бывшая девушка стёрла воспоминания об их отношениях. Он решает сделать то же самое, но передумывает, когда прошлое начинает исчезать.",
     "poster": "/posters/eternal-sunshine-of-the-spotless-mind.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/dml2HEX2R98o7D1hx9PgbPvQBVP.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/d3fba980d21a98bedd19d960b6598599/"
   },
   {
     "id": "the-truman-show",
@@ -625,19 +872,27 @@
     "originalTitle": "The Truman Show",
     "year": 1998,
     "genre": "комедия",
-    "genres": ["комедия", "драма"],
+    "genres": [
+      "комедия",
+      "драма"
+    ],
     "rating": 8.2,
     "votes": 1300000,
     "duration": 103,
     "country": "США",
     "ageRating": "12+",
     "director": "Питер Уир",
-    "cast": ["Джим Керри", "Эд Харрис", "Лора Линни"],
+    "cast": [
+      "Джим Керри",
+      "Эд Харрис",
+      "Лора Линни"
+    ],
     "tagline": "Вся жизнь — это шоу.",
     "description": "Труман живёт идеальной жизнью, не подозревая, что каждый его шаг снимают для телешоу. Странные совпадения заставляют его искать выход из искусственного мира.",
     "poster": "/posters/the-truman-show.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/rkDMGd3Ukn5fHY4msDy2Jbe0IIs.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/bc1883aebabfd89a8afb919b96a6f4e8/"
   },
   {
     "id": "amelie",
@@ -645,19 +900,27 @@
     "originalTitle": "Le Fabuleux Destin d'Amélie Poulain",
     "year": 2001,
     "genre": "комедия",
-    "genres": ["комедия", "драма"],
+    "genres": [
+      "комедия",
+      "драма"
+    ],
     "rating": 8.3,
     "votes": 800000,
     "duration": 122,
     "country": "Франция, Германия",
     "ageRating": "16+",
     "director": "Жан-Пьер Жёне",
-    "cast": ["Одри Тоту", "Матьё Кассовиц", "Рюфюс"],
+    "cast": [
+      "Одри Тоту",
+      "Матьё Кассовиц",
+      "Рюфюс"
+    ],
     "tagline": "Она изменит вашу жизнь.",
     "description": "Парижанка Амели решает тайно помогать людям вокруг себя. Пока она устраивает маленькие чудеса для других, ей самой предстоит научиться быть счастливой.",
     "poster": "/posters/amelie.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/4rHIh0WlZNHE5pOgR31tBeUlJZN.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/39a0b03a90f2c4b436b1a954a9b0337e/"
   },
   {
     "id": "the-intouchables",
@@ -665,19 +928,27 @@
     "originalTitle": "The Intouchables",
     "year": 2011,
     "genre": "комедия",
-    "genres": ["комедия", "драма"],
+    "genres": [
+      "комедия",
+      "драма"
+    ],
     "rating": 8.5,
     "votes": 1700000,
     "duration": 112,
     "country": "Франция",
     "ageRating": "16+",
     "director": "Оливье Накаш и Эрик Толедано",
-    "cast": ["Франсуа Клюзе", "Омар Си", "Анн Ле Ни"],
+    "cast": [
+      "Франсуа Клюзе",
+      "Омар Си",
+      "Анн Ле Ни"
+    ],
     "tagline": "Иногда дружба начинается с работы.",
     "description": "Богатый аристократ нанимает в помощники бывшего заключённого, который совсем не похож на других кандидатов. Неожиданная дружба меняет жизнь обоих.",
     "poster": "/posters/the-intouchables.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/wLEJ3TCD6VIiG1Ib99ISQiUEsWl.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/ef82e51fad7c2e57cfbe134fcd44e301/"
   },
   {
     "id": "cinema-paradiso",
@@ -685,19 +956,26 @@
     "originalTitle": "Nuovo Cinema Paradiso",
     "year": 1988,
     "genre": "драма",
-    "genres": ["драма"],
+    "genres": [
+      "драма"
+    ],
     "rating": 8.5,
     "votes": 300000,
     "duration": 124,
     "country": "Италия, Франция",
     "ageRating": "16+",
     "director": "Джузеппе Торнаторе",
-    "cast": ["Филипп Нуаре", "Жак Перрен", "Марко Леонарди"],
+    "cast": [
+      "Филипп Нуаре",
+      "Жак Перрен",
+      "Марко Леонарди"
+    ],
     "tagline": "История любви к кино.",
     "description": "Успешный режиссёр возвращается в родной город после известия о смерти старого киномеханика. Воспоминания переносят его в детство, когда кинотеатр был центром всей жизни.",
     "poster": "/posters/cinema-paradiso.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/9JhfVOveaY00o8njQu2Xrp4YWud.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/4c05c68cc2a9e6d92e830bdbb316bc4d/"
   },
   {
     "id": "city-of-god",
@@ -705,19 +983,27 @@
     "originalTitle": "City of God",
     "year": 2002,
     "genre": "драма",
-    "genres": ["драма", "триллер"],
+    "genres": [
+      "драма",
+      "триллер"
+    ],
     "rating": 8.6,
     "votes": 800000,
     "duration": 130,
     "country": "Бразилия, Франция",
     "ageRating": "18+",
     "director": "Фернанду Мейреллиш и Катиа Лунд",
-    "cast": ["Александре Родригес", "Леандру Фирмину", "Фелиппе Хаагенсен"],
+    "cast": [
+      "Александре Родригес",
+      "Леандру Фирмину",
+      "Фелиппе Хаагенсен"
+    ],
     "tagline": "Если не убежишь, тебя догонят.",
     "description": "В бедном районе Рио-де-Жанейро два друга выбирают разные пути: один мечтает стать фотографом, другой строит криминальную империю. Их судьбы переплетаются на фоне жестокой уличной жизни.",
     "poster": "/posters/city-of-god.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/e6ee3f86860a24d2cb914a24133ece79/"
   },
   {
     "id": "the-departed",
@@ -725,19 +1011,27 @@
     "originalTitle": "The Departed",
     "year": 2006,
     "genre": "триллер",
-    "genres": ["триллер", "драма"],
+    "genres": [
+      "триллер",
+      "драма"
+    ],
     "rating": 8.5,
     "votes": 1500000,
     "duration": 151,
     "country": "США, Гонконг",
     "ageRating": "18+",
     "director": "Мартин Скорсезе",
-    "cast": ["Леонардо Ди Каприо", "Мэтт Дэймон", "Джек Николсон"],
+    "cast": [
+      "Леонардо Ди Каприо",
+      "Мэтт Дэймон",
+      "Джек Николсон"
+    ],
     "tagline": "В каждом есть предатель.",
     "description": "Полицейский внедряется в мафию, а человек мафии занимает место внутри полиции. Оба пытаются раскрыть друг друга раньше, чем их личности станут известны.",
     "poster": "/posters/the-departed.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/r7UeMajpGaeAfDse9yrL2jhN8Ry.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/52c9d642e593bfe10be3e1f8f6726033/"
   },
   {
     "id": "the-wolf-of-wall-street",
@@ -745,19 +1039,27 @@
     "originalTitle": "The Wolf of Wall Street",
     "year": 2013,
     "genre": "комедия",
-    "genres": ["комедия", "драма"],
+    "genres": [
+      "комедия",
+      "драма"
+    ],
     "rating": 8.2,
     "votes": 1700000,
     "duration": 180,
     "country": "США",
     "ageRating": "18+",
     "director": "Мартин Скорсезе",
-    "cast": ["Леонардо Ди Каприо", "Джона Хилл", "Марго Робби"],
+    "cast": [
+      "Леонардо Ди Каприо",
+      "Джона Хилл",
+      "Марго Робби"
+    ],
     "tagline": "Больше денег. Больше проблем.",
     "description": "Джордан Белфорт быстро превращается из начинающего брокера в богатого и безрассудного лидера финансовой компании. Роскошь, азарт и преступления постепенно приводят к расплате.",
     "poster": "/posters/the-wolf-of-wall-street.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/kW9LmvYHAaS9iA0tHmZVq8hQYoq.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/ec0d76e8ee856b424b952c19f5cc50d7/"
   },
   {
     "id": "django-unchained",
@@ -765,19 +1067,27 @@
     "originalTitle": "Django Unchained",
     "year": 2012,
     "genre": "триллер",
-    "genres": ["триллер", "драма"],
+    "genres": [
+      "триллер",
+      "драма"
+    ],
     "rating": 8.2,
     "votes": 1800000,
     "duration": 165,
     "country": "США",
     "ageRating": "18+",
     "director": "Квентин Тарантино",
-    "cast": ["Джейми Фокс", "Кристоф Вальц", "Сэмюэл Л. Джексон"],
+    "cast": [
+      "Джейми Фокс",
+      "Кристоф Вальц",
+      "Сэмюэл Л. Джексон"
+    ],
     "tagline": "Свобода имеет свою цену.",
     "description": "Освобождённый раб Джанго становится охотником за головами и отправляется на поиски жены. На пути к цели ему приходится столкнуться с жестоким владельцем плантации.",
     "poster": "/posters/django-unchained.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/413bac447799c7176268aeee63ba0760/"
   },
   {
     "id": "inglourious-basterds",
@@ -785,19 +1095,27 @@
     "originalTitle": "Inglourious Basterds",
     "year": 2009,
     "genre": "триллер",
-    "genres": ["триллер", "драма"],
+    "genres": [
+      "триллер",
+      "драма"
+    ],
     "rating": 8.4,
     "votes": 2300000,
     "duration": 153,
     "country": "США, Германия",
     "ageRating": "18+",
     "director": "Квентин Тарантино",
-    "cast": ["Брэд Питт", "Мелани Лоран", "Кристоф Вальц"],
+    "cast": [
+      "Брэд Питт",
+      "Мелани Лоран",
+      "Кристоф Вальц"
+    ],
     "tagline": "Одна команда. Одна миссия. Одна история мести.",
     "description": "Во время Второй мировой войны отряд американских солдат готовит дерзкую операцию против нацистского руководства. Параллельно молодая владелица кинотеатра планирует собственную месть.",
     "poster": "/posters/inglourious-basterds.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/dx3F3zdMqaRo2geYhuJBrugb11k.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/5e09e80e61218f225eca194fd8ab3f4d/"
   },
   {
     "id": "once-upon-a-time-in-hollywood",
@@ -805,19 +1123,27 @@
     "originalTitle": "Once Upon a Time... in Hollywood",
     "year": 2019,
     "genre": "комедия",
-    "genres": ["комедия", "драма"],
+    "genres": [
+      "комедия",
+      "драма"
+    ],
     "rating": 7.6,
     "votes": 1300000,
     "duration": 161,
     "country": "США, Великобритания",
     "ageRating": "18+",
     "director": "Квентин Тарантино",
-    "cast": ["Леонардо Ди Каприо", "Брэд Питт", "Марго Робби"],
+    "cast": [
+      "Леонардо Ди Каприо",
+      "Брэд Питт",
+      "Марго Робби"
+    ],
     "tagline": "В Голливуде всё может случиться.",
     "description": "Телевизионный актёр и его каскадёр пытаются найти своё место в быстро меняющемся Голливуде конца шестидесятых. Их история разворачивается рядом с самыми известными событиями эпохи.",
     "poster": "/posters/once-upon-a-time-in-hollywood.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/8j58iEBw9pOXFD2L0nt0ZXeHviB.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/6ba25e9b2d03b655d7d8912fbe74a624/"
   },
   {
     "id": "get-out",
@@ -825,19 +1151,27 @@
     "originalTitle": "Get Out",
     "year": 2017,
     "genre": "триллер",
-    "genres": ["триллер", "драма"],
+    "genres": [
+      "триллер",
+      "драма"
+    ],
     "rating": 7.6,
     "votes": 800000,
     "duration": 104,
     "country": "США",
     "ageRating": "18+",
     "director": "Джордан Пил",
-    "cast": ["Дэниэл Калуя", "Эллисон Уильямс", "Брэдли Уитфорд"],
+    "cast": [
+      "Дэниэл Калуя",
+      "Эллисон Уильямс",
+      "Брэдли Уитфорд"
+    ],
     "tagline": "Просто расслабься.",
     "description": "Крис отправляется знакомиться с семьёй своей девушки и замечает тревожные детали в их поведении. За гостеприимством скрывается секрет, выбраться из которого будет непросто.",
     "poster": "/posters/get-out.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/tFXcEccSQMf3lfhfXKSU9iRBpa3.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/037d684334491916f4e9d1aa1ffc05a8/"
   },
   {
     "id": "the-revenant",
@@ -845,19 +1179,27 @@
     "originalTitle": "The Revenant",
     "year": 2015,
     "genre": "драма",
-    "genres": ["драма", "триллер"],
-    "rating": 8.0,
+    "genres": [
+      "драма",
+      "триллер"
+    ],
+    "rating": 8,
     "votes": 900000,
     "duration": 156,
     "country": "США, Гонконг, Тайвань",
     "ageRating": "16+",
     "director": "Алехандро Гонсалес Иньярриту",
-    "cast": ["Леонардо Ди Каприо", "Том Харди", "Домналл Глисон"],
+    "cast": [
+      "Леонардо Ди Каприо",
+      "Том Харди",
+      "Домналл Глисон"
+    ],
     "tagline": "Месть ведёт его домой.",
     "description": "После нападения медведя охотник Хью Гласс оказывается брошен товарищами в заснеженной дикой местности. Несмотря на раны, он начинает долгий путь ради мести и возвращения к сыну.",
     "poster": "/posters/the-revenant.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/ji3ecJphATlVgWNY0B0RVXZizdf.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/1b0db337d6a9906e623bde89325e3231/"
   },
   {
     "id": "no-country-for-old-men",
@@ -865,19 +1207,27 @@
     "originalTitle": "No Country for Old Men",
     "year": 2007,
     "genre": "триллер",
-    "genres": ["триллер", "драма"],
+    "genres": [
+      "триллер",
+      "драма"
+    ],
     "rating": 8.2,
     "votes": 1100000,
     "duration": 122,
     "country": "США",
     "ageRating": "18+",
     "director": "Джоэл и Итан Коэны",
-    "cast": ["Томми Ли Джонс", "Хавьер Бардем", "Джош Бролин"],
+    "cast": [
+      "Томми Ли Джонс",
+      "Хавьер Бардем",
+      "Джош Бролин"
+    ],
     "tagline": "Ничто не заканчивается случайно.",
     "description": "Ллевелин Мосс находит деньги после неудачной сделки наркоторговцев и забирает их себе. За ним отправляется беспощадный убийца, а опытный шериф пытается остановить обоих.",
     "poster": "/posters/no-country-for-old-men.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/wtFA1ns9iEocXcWoOlWt18QF7f3.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/1699d462760e77017d638c206d4dd57d/"
   },
   {
     "id": "a-beautiful-mind",
@@ -885,19 +1235,26 @@
     "originalTitle": "A Beautiful Mind",
     "year": 2001,
     "genre": "драма",
-    "genres": ["драма"],
+    "genres": [
+      "драма"
+    ],
     "rating": 8.2,
     "votes": 1000000,
     "duration": 135,
     "country": "США",
     "ageRating": "12+",
     "director": "Рон Ховард",
-    "cast": ["Рассел Кроу", "Эд Харрис", "Дженнифер Коннелли"],
+    "cast": [
+      "Рассел Кроу",
+      "Эд Харрис",
+      "Дженнифер Коннелли"
+    ],
     "tagline": "Он видел мир иначе.",
     "description": "Молодой математик Джон Нэш стремится найти формулу, которая изменит науку. Когда реальность начинает смешиваться с иллюзиями, ему приходится заново определить, чему можно доверять.",
     "poster": "/posters/a-beautiful-mind.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/2CQFRIZHvuKqB7cYEpM53I3npuG.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/2d7d1817778475e70501c8c34267fa15/"
   },
   {
     "id": "the-pianist",
@@ -905,19 +1262,26 @@
     "originalTitle": "The Pianist",
     "year": 2002,
     "genre": "драма",
-    "genres": ["драма"],
+    "genres": [
+      "драма"
+    ],
     "rating": 8.5,
     "votes": 900000,
     "duration": 150,
     "country": "Франция, Польша, Германия",
     "ageRating": "16+",
     "director": "Роман Полански",
-    "cast": ["Эдриен Броуди", "Томас Кречманн", "Фрэнк Финлей"],
+    "cast": [
+      "Эдриен Броуди",
+      "Томас Кречманн",
+      "Фрэнк Финлей"
+    ],
     "tagline": "Музыка помогла ему выжить.",
     "description": "Польский пианист Владислав Шпильман пытается выжить в оккупированной Варшаве и сохранить связь с музыкой, когда вокруг рушится весь привычный мир.",
     "poster": "/posters/the-pianist.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/7FgpNs0msgFHlA2qWnHcRxWqjL6.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/34c94490f0358a899d6eb20d4f33cfaa/"
   },
   {
     "id": "the-social-network",
@@ -925,19 +1289,26 @@
     "originalTitle": "The Social Network",
     "year": 2010,
     "genre": "драма",
-    "genres": ["драма"],
+    "genres": [
+      "драма"
+    ],
     "rating": 7.7,
     "votes": 800000,
     "duration": 120,
     "country": "США",
     "ageRating": "16+",
     "director": "Дэвид Финчер",
-    "cast": ["Джесси Айзенберг", "Эндрю Гарфилд", "Джастин Тимберлейк"],
+    "cast": [
+      "Джесси Айзенберг",
+      "Эндрю Гарфилд",
+      "Джастин Тимберлейк"
+    ],
     "tagline": "Нельзя завести 500 миллионов друзей, не нажив ни одного врага.",
     "description": "История создания крупнейшей социальной сети начинается с идеи в комнате общежития. Успех быстро приводит к конфликтам между друзьями, партнёрами и бывшими союзниками.",
     "poster": "/posters/the-social-network.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/cef565bcaec0624a243b1582d87176c6/"
   },
   {
     "id": "the-imitation-game",
@@ -945,19 +1316,27 @@
     "originalTitle": "The Imitation Game",
     "year": 2014,
     "genre": "драма",
-    "genres": ["драма", "триллер"],
-    "rating": 8.0,
+    "genres": [
+      "драма",
+      "триллер"
+    ],
+    "rating": 8,
     "votes": 900000,
     "duration": 114,
     "country": "Великобритания, США",
     "ageRating": "12+",
     "director": "Мортен Тильдум",
-    "cast": ["Бенедикт Камбербэтч", "Кира Найтли", "Мэттью Гуд"],
+    "cast": [
+      "Бенедикт Камбербэтч",
+      "Кира Найтли",
+      "Мэттью Гуд"
+    ],
     "tagline": "Иногда именно те, кого никто не замечает, меняют историю.",
     "description": "Математик Алан Тьюринг собирает команду, чтобы взломать код немецкой шифровальной машины. Его работа помогает приблизить конец войны, но личная жизнь остаётся под угрозой.",
     "poster": "/posters/the-imitation-game.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/tgrCAy07tXRXdUawoTmkwEd8ueR.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/video/67aab7faabd8a25d4dd9f72b8158e55e/"
   },
   {
     "id": "knives-out",
@@ -965,19 +1344,27 @@
     "originalTitle": "Knives Out",
     "year": 2019,
     "genre": "триллер",
-    "genres": ["триллер", "комедия"],
+    "genres": [
+      "триллер",
+      "комедия"
+    ],
     "rating": 7.8,
     "votes": 1300000,
     "duration": 131,
     "country": "США",
     "ageRating": "16+",
     "director": "Райан Джонсон",
-    "cast": ["Дэниэл Крейг", "Ана де Армас", "Крис Эванс"],
+    "cast": [
+      "Дэниэл Крейг",
+      "Ана де Армас",
+      "Крис Эванс"
+    ],
     "tagline": "У каждого есть мотив.",
     "description": "После смерти известного писателя вся его семья оказывается под подозрением. Детектив Бенуа Блан начинает расследование, в котором у каждого родственника есть свой секрет.",
     "poster": "/posters/knives-out.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/hL4kVNxyCnOhvS1pMvU72svEjAm.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/search/?query=%D0%94%D0%BE%D1%81%D1%82%D0%B0%D1%82%D1%8C%20%D0%BD%D0%BE%D0%B6%D0%B8%202019"
   },
   {
     "id": "everything-everywhere-all-at-once",
@@ -985,18 +1372,26 @@
     "originalTitle": "Everything Everywhere All at Once",
     "year": 2022,
     "genre": "фантастика",
-    "genres": ["фантастика", "комедия"],
+    "genres": [
+      "фантастика",
+      "комедия"
+    ],
     "rating": 7.8,
     "votes": 800000,
     "duration": 140,
     "country": "США",
     "ageRating": "16+",
     "director": "Дэниэл Кван и Дэниэл Шайнерт",
-    "cast": ["Мишель Йео", "Ке Хюи Куан", "Джейми Ли Кёртис"],
+    "cast": [
+      "Мишель Йео",
+      "Ке Хюи Куан",
+      "Джейми Ли Кёртис"
+    ],
     "tagline": "Вселенная слишком большая для одной семьи.",
     "description": "Владелица прачечной внезапно получает доступ к жизням своих альтернативных версий. Чтобы спасти миры и семью, ей придётся принять все возможности собственной судьбы.",
     "poster": "/posters/everything-everywhere-all-at-once.jpg",
     "posterSource": "https://media.themoviedb.org/t/p/w500/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
-    "isEditorsChoice": false
+    "isEditorsChoice": false,
+    "watchUrl": "https://rutube.ru/search/?query=%D0%92%D1%81%D1%91%20%D0%B2%D0%B5%D0%B7%D0%B4%D0%B5%20%D0%B8%20%D1%81%D1%80%D0%B0%D0%B7%D1%83%202022"
   }
 ]

@@ -157,8 +157,15 @@ function App() {
   }
 
   const watchMovie = (movie: Movie) => {
+    const openedWindow = window.open(movie.watchUrl, '_blank', 'noopener,noreferrer')
+
+    if (!openedWindow) {
+      window.location.assign(movie.watchUrl)
+      return
+    }
+
     setModalMovie(null)
-    setToastMessage(`Запускаем «${movie.title}»`)
+    setToastMessage(`Открываем «${movie.title}» на Rutube`)
   }
 
   const addReview = (movie: Movie, draft: ReviewDraft) => {
