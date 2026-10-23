@@ -138,7 +138,17 @@ function App() {
     setShowWelcome(false)
     window.sessionStorage.setItem(INTRO_STORAGE_KEY, 'true')
     window.requestAnimationFrame(() => {
-      document.getElementById('app-content')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      const content = document.getElementById('app-content')
+      if (!content) return
+
+      const header = document.querySelector<HTMLElement>('.glass-header')
+      const headerOffset = (header?.getBoundingClientRect().height ?? 68) + 26
+      const contentTop = content.getBoundingClientRect().top + window.scrollY
+
+      window.scrollTo({
+        top: Math.max(0, contentTop - headerOffset),
+        behavior: 'smooth',
+      })
     })
   }
 

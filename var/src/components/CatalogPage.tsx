@@ -48,7 +48,6 @@ export function CatalogPage({
     <main className="page catalog-page" id="catalog">
       <div className="catalog-heading">
         <div>
-          <p className="eyebrow">КИНОПОЛКА</p>
           <h1>Каталог</h1>
         </div>
         <label className="search-field">

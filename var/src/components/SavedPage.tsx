@@ -16,7 +16,6 @@ export function SavedPage({ movies, onSelect, onToggleSaved, savedIds }: SavedPa
     <main className="page saved-page" id="saved">
       <div className="page-heading">
         <div>
-          <p className="eyebrow">КИНОПОЛКА</p>
           <h1>Посмотреть позже</h1>
           <p>Фильмы, к которым хочется вернуться.</p>
         </div>

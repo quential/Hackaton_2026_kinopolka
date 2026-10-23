@@ -29,7 +29,6 @@ export function HomePage({
   return (
     <main className="page home-page" id="home">
       <section className="page-intro">
-        <p className="eyebrow">КИНОПОЛКА</p>
         <h1>Фильмы на вечер</h1>
         <p>Подборка, с которой легко начать.</p>
       </section>
