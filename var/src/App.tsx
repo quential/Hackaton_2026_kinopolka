@@ -6,6 +6,7 @@ import GlassHeader, { type AppView } from './components/GlassHeader'
 import { HomePage } from './components/HomePage'
 import { LoadingState } from './components/LoadingState'
 import { MovieModal } from './components/MovieModal'
+import { MoodQuizPage } from './components/MoodQuizPage'
 import { SavedPage } from './components/SavedPage'
 import { Toast } from './components/Toast'
 import { WelcomeScreen } from './components/WelcomeScreen'
@@ -244,6 +245,7 @@ function App() {
                   }
                 })
               }
+              onStartMoodQuiz={() => navigate('mood')}
               onSelect={setModalMovie}
               onToggleSaved={toggleSaved}
               popularMovies={popularMovies}
@@ -253,6 +255,15 @@ function App() {
           {!isLoading && !loadError && activeView === 'catalog' && (
             <CatalogPage
               movies={movies}
+              onSelect={setModalMovie}
+              onToggleSaved={toggleSaved}
+              savedIds={savedIds}
+            />
+          )}
+          {!isLoading && !loadError && activeView === 'mood' && (
+            <MoodQuizPage
+              movies={movies}
+              onBack={() => navigate('home')}
               onSelect={setModalMovie}
               onToggleSaved={toggleSaved}
               savedIds={savedIds}

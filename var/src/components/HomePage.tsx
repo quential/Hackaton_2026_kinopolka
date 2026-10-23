@@ -1,10 +1,12 @@
 import type { Movie } from '../types/movie'
 import Icon from './Icon'
+import { MoodPickerPanel } from './MoodPickerPanel'
 import { MovieRail } from './MovieRail'
 
 type HomePageProps = {
   editorialMovies: Movie[]
   onRefresh: () => void
+  onStartMoodQuiz: () => void
   onSelect: (movie: Movie) => void
   onToggleSaved: (movie: Movie) => void
   popularMovies: Movie[]
@@ -21,6 +23,7 @@ const genreCards = [
 export function HomePage({
   editorialMovies,
   onRefresh,
+  onStartMoodQuiz,
   onSelect,
   onToggleSaved,
   popularMovies,
@@ -43,6 +46,8 @@ export function HomePage({
         title="Выбор редакции"
         variant="editorial"
       />
+
+      <MoodPickerPanel onStart={onStartMoodQuiz} />
 
       <section className="content-section genre-section">
         <div className="section-heading">

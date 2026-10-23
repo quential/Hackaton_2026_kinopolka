@@ -2,7 +2,7 @@ import type { Theme } from '../types/theme'
 import Icon from './Icon'
 import { BrandMark } from './BrandMark'
 
-export type AppView = 'home' | 'catalog' | 'saved'
+export type AppView = 'home' | 'catalog' | 'saved' | 'mood'
 
 type GlassHeaderProps = {
   activeView: AppView
@@ -23,6 +23,8 @@ export function GlassHeader({
   onToggleTheme,
   theme,
 }: GlassHeaderProps) {
+  const activeNavView = activeView === 'mood' ? 'home' : activeView
+
   return (
     <header className="glass-header">
       <button
@@ -37,8 +39,8 @@ export function GlassHeader({
       <nav aria-label="Основная навигация" className="primary-nav">
         {navItems.map((item) => (
           <button
-            aria-current={activeView === item.view ? 'page' : undefined}
-            className={`nav-link ${activeView === item.view ? 'is-active' : ''}`}
+            aria-current={activeNavView === item.view ? 'page' : undefined}
+            className={`nav-link ${activeNavView === item.view ? 'is-active' : ''}`}
             key={item.view}
             onClick={() => onNavigate(item.view)}
             type="button"
